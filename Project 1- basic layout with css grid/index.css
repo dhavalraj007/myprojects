@@ -1,0 +1,131 @@
+/*       331832-dc143c-f0544f-c6d8d3-fdf0d5      */
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: rgb(180,58,136);
+background: linear-gradient(180deg, rgba(180,58,136,1) 0%, rgba(253,29,29,1) 51%, rgba(252,176,69,1) 100%);
+}
+
+.wrapper{
+	margin-top: 20px;
+	display: grid;
+	grid-template: 100vh 100vh 200px /  2% auto 2%;
+	box-shadow: 10px 10px 0 black;
+	font-family: sans-serif;
+	
+}
+
+
+/*_______________________header________________________________*/
+
+
+
+header{
+	
+	grid-column: 2 / 3;
+	display: grid;
+	grid-template: 100% / 1fr 1.5fr; 
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	
+}
+
+.header__img{
+	background-color: #f0544f;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	object-fit:contain;
+}
+
+.img{
+	border-radius: 100px;
+	height: 200px;
+	width: 200px;
+}
+h2{
+	margin-top: 20px;
+	font-family: sans-serif;
+	color: white;
+	text-transform: uppercase;
+	
+}
+
+.header__text{
+			background-color: #dc143c;
+		overflow: hidden;
+		display: flex;
+	align-items: center;
+	padding:0 20px;
+	font-size: 30px;
+	color: white;
+}
+
+/*_______________________main-cards________________________________*/
+
+.main-cards{
+	background:linear-gradient(#e36868,#db4747);
+	grid-column: 2 / 3;
+	border-radius: 0 0 5px 5px;
+	display: grid;
+	grid-template: repeat(2,250px) / repeat(4,300px);
+	align-content:  space-evenly;
+	justify-content: space-evenly;
+}
+
+.main-cards > .card {
+	background: #c7c7c7;
+	border:2px solid black;
+	border-radius: 10px;
+	overflow:hidden;
+	display: flex;
+	flex-flow: column;
+	padding: 2%;
+}
+
+.card_name{
+	padding-left: 5px;
+	font-size: 1.1em;
+	height: 40px;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+/*_______________________Footer________________________________*/
+
+footer{
+	background:#fdf0d5 ;
+	grid-column: 1 / -1;
+	border-radius: 13px 13px 0 0;
+	margin-top: 50px;
+	padding:40px;
+	position: relative;
+}
+
+
+footer > span {
+	font-family: sans-serif;
+	color: #000000;
+	margin-left: 20px;
+	background: #c7c7c7;
+	border:2px solid black;
+	border-radius: 10px;
+	overflow:hidden;
+	padding: 10px;
+}
+
+footer > div {
+	position:  absolute;
+	bottom:5px;
+	text-align: center;
+	width:100vw;
+}

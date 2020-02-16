@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+  background:linear-gradient(to left top,black,skyblue);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:Lato;
+}
+
+.sidebar_wrapper{
+  width: 300px;
+  background-color:white;
+  border-radius:7px;
+  margin:auto;
+}
+
+.sidebar{
+  display:flex;
+  flex-flow:column nowrap;
+  height: 500px;
+}
+
+.sidebar__logo{
+  text-align:center;
+  text-transform:uppercase;
+  flex-shrink:0;
+  letter-spacing:0.1em;
+}
+.sidebar__logo > h3:hover,
+.sidebar__logo > h3:active{
+  color:rgba(0,150,150);
+  cursor:pointer;
+ text-shadow:-4px 5px 100px; 
+}
+
+.line
+{
+  display:block;
+  content:" ";
+  background-color:silver;
+  height:2px;
+  width:250px;
+  margin:0 auto;
+}
+
+.sidebar__nav{
+  list-style:none;
+  padding-inline-start: 0px;
+  flex-grow:1;
+
+}
+
+li{
+  text-align:left;
+  padding:15px 25px;
+  cursor:pointer;
+}
+
+li:hover,
+li:active,
+.sidebar__nav li:first-child
+{
+  text-align:left;
+  font-size:110%;
+  padding:15px 20px;
+  background:rgba(0,0,0,.8);
+  cursor:pointer;
+  color:rgba(0,255,255);
+  transition: color 0.4s , background 0.4s;
+}
+.sidebar__nav li i{
+  width:24px;
+  font-size:106%;
+}
+
+.sidebar__profile{
+  text-align:center;
+  flex-shrink:0;
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+}
+
+.sidebar__profile > img{
+  border-radius:100px;
+  width:80px;
+  height:80px;
+}
+.sidebar__profile > img:hover,
+.sidebar__profile > img:active{
+}
+
+.sidebar__profile > p{
+  font-size:18px;
+  text-align:left;
+  margin-top:10px;
+}
